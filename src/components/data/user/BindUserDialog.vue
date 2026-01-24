@@ -131,7 +131,9 @@
                             <br />
                             只能更新达成率和 DX 分数
                             <br />
-                            未启用不需要绑定账户
+                            未启用第一次需要扫码，
+                            <br />
+                            后续可选快速更新
                         </span>
                         <mdui-switch
                             slot="end-icon"
@@ -329,7 +331,7 @@
     function bindInGame() {
         prompt({
             headline: "绑定用户",
-            description: "输入二维码扫描结果或复制的二维码页面链接",
+            description: "输入二维码扫描结果或复制的二维码页面链接。该操作不会尝试登录您的帐户。",
             confirmText: "绑定",
             cancelText: "取消",
             closeOnEsc: true,

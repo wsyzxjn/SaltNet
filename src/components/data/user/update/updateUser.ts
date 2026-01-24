@@ -106,7 +106,7 @@ export function updateUserWithWorker(user: User) {
     if (shouldPromptQrCode) {
         prompt({
             headline: "更新用户数据",
-            description: `输入二维码扫描结果或复制的二维码页面链接${user.data.detailed && user.inGame.id ? `，也可以留空使用快速更新` : ""}`,
+            description: `输入二维码扫描结果或复制的二维码页面链接（需要登录帐号）${user.data.detailed && user.inGame.id ? `，日常更新建议留空使用快速更新（不会尝试登录帐号）` : ""}`,
             confirmText: "更新",
             cancelText: "取消",
             closeOnEsc: true,
