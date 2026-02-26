@@ -54,6 +54,9 @@
             <mdui-chip icon="category" style="cursor: pointer">
                 {{ chart.music.info.genre || "未知" }}
             </mdui-chip>
+            <mdui-chip icon="timer" style="cursor: pointer">
+                {{ chart.music.info.bpm || "未知" }}
+            </mdui-chip>
             <mdui-chip icon="access_time_filled" style="cursor: pointer">
                 {{ chart.music.info.from || "未知" }}
             </mdui-chip>
